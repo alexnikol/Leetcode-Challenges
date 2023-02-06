@@ -48,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D3B1868299138E600079E58 /* 1. Two Sum */ = {
+			isa = PBXGroup;
+			children = (
+				8D3B18692991390200079E58 /* TwoSumTests.swift */,
+			);
+			path = "1. Two Sum";
+			sourceTree = "<group>";
+		};
 		8DAEEA7B2991334B00463478 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +93,7 @@
 		8DAEEA9D2991338D00463478 /* Easy */ = {
 			isa = PBXGroup;
 			children = (
+				8D3B1868299138E600079E58 /* 1. Two Sum */,
 				8DAEEA9E299133C300463478 /* 1470. Shuffle the Array */,
 			);
 			path = Easy;
@@ -216,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3B186A2991390200079E58 /* TwoSumTests.swift in Sources */,
 				8DAEEAA22991341500463478 /* ShuffleTheArrayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
