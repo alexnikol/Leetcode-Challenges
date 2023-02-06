@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3B186A2991390200079E58 /* TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B18692991390200079E58 /* TwoSumTests.swift */; };
 		8DAEEA8E2991334C00463478 /* Leetcode_Challenges.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAEEA852991334B00463478 /* Leetcode_Challenges.framework */; };
 		8DAEEAA22991341500463478 /* ShuffleTheArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEAA12991341500463478 /* ShuffleTheArrayTests.swift */; };
 		8DAEEAA42991359300463478 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8DAEEAA32991359300463478 /* README.md */; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D3B18692991390200079E58 /* TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTests.swift; sourceTree = "<group>"; };
 		8DAEEA852991334B00463478 /* Leetcode_Challenges.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Leetcode_Challenges.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAEEA8D2991334C00463478 /* Leetcode ChallengesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leetcode ChallengesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAEEAA12991341500463478 /* ShuffleTheArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleTheArrayTests.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D3B1868299138E600079E58 /* 1. Two Sum */ = {
+			isa = PBXGroup;
+			children = (
+				8D3B18692991390200079E58 /* TwoSumTests.swift */,
+			);
+			path = "1. Two Sum";
+			sourceTree = "<group>";
+		};
 		8DAEEA7B2991334B00463478 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		8DAEEA9D2991338D00463478 /* Easy */ = {
 			isa = PBXGroup;
 			children = (
+				8D3B1868299138E600079E58 /* 1. Two Sum */,
 				8DAEEA9E299133C300463478 /* 1470. Shuffle the Array */,
 			);
 			path = Easy;
@@ -216,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3B186A2991390200079E58 /* TwoSumTests.swift in Sources */,
 				8DAEEAA22991341500463478 /* ShuffleTheArrayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
