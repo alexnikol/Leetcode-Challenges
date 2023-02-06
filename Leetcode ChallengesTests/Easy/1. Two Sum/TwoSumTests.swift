@@ -21,6 +21,9 @@ final class TwoSumTests: XCTestCase {
         
         let result3 = sut.twoSum([3, 3], 6)
         XCTAssertEqual(result3, [0, 1])
+        
+        let result4 = sut.twoSum([3, 1, 3], 6)
+        XCTAssertEqual(result4, [0, 2])
     }
     
     // MARK: - Helpers
@@ -31,13 +34,26 @@ final class TwoSumTests: XCTestCase {
     
     class Solution {
         func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+            func findSecondPairFor(number: Int, startIndex: Int) -> Int? {
+                var found: Int?
+                
+                for index in startIndex..<nums.count {
+                    if number + nums[index] == target {
+                        found = index
+                        break
+                    }
+                }
+                return found
+            }
+            
             var result: [Int] = []
             for index in 0..<nums.count {
-                if nums[index] + nums[index + 1] == target {
-                    result.append(index)
-                    result.append(index + 1)
-                    break
+                let number = nums[index]
+                guard let pairIndex = findSecondPairFor(number: number, startIndex: index + 1) else {
+                    continue
                 }
+                result = [index, pairIndex]
+                break
             }
             return result
         }
