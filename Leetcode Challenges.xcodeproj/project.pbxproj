@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3B186C2991433800079E58 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8D3B186B2991433800079E58 /* README.md */; };
 		8DAEEA8E2991334C00463478 /* Leetcode_Challenges.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAEEA852991334B00463478 /* Leetcode_Challenges.framework */; };
 		8DAEEAA22991341500463478 /* ShuffleTheArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEAA12991341500463478 /* ShuffleTheArrayTests.swift */; };
-		8DAEEAA42991359300463478 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8DAEEAA32991359300463478 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,10 +23,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D3B186B2991433800079E58 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		8DAEEA852991334B00463478 /* Leetcode_Challenges.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Leetcode_Challenges.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAEEA8D2991334C00463478 /* Leetcode ChallengesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leetcode ChallengesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAEEAA12991341500463478 /* ShuffleTheArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleTheArrayTests.swift; sourceTree = "<group>"; };
-		8DAEEAA32991359300463478 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 		8DAEEA872991334B00463478 /* Leetcode Challenges */ = {
 			isa = PBXGroup;
 			children = (
-				8DAEEAA32991359300463478 /* README.md */,
+				8D3B186B2991433800079E58 /* README.md */,
 			);
 			path = "Leetcode Challenges";
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DAEEAA42991359300463478 /* README.md in Resources */,
+				8D3B186C2991433800079E58 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
