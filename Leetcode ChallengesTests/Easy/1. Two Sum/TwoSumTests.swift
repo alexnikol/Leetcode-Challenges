@@ -46,6 +46,8 @@ final class TwoSumTests: XCTestCase {
                 return found
             }
             
+            guard nums.count > 2 else { return [0, 1] }
+            
             var result: [Int] = []
             for index in 0..<nums.count {
                 let number = nums[index]
