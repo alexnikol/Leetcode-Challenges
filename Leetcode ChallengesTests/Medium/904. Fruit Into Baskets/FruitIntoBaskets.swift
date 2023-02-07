@@ -17,6 +17,15 @@ final class FruitIntoBaskets: XCTestCase {
         
         let result1 = sut.totalFruit([1,2,1])
         XCTAssertEqual(result1, 3)
+
+        let result2 = sut.totalFruit([0,1,2,2])
+        XCTAssertEqual(result2, 3)
+
+        let result3 = sut.totalFruit([1,2,3,2,2])
+        XCTAssertEqual(result3, 4)
+        
+        let result4 = sut.totalFruit([3,3,3,1,2,1,1,2,3,3,4])
+        XCTAssertEqual(result4, 5)
     }
     
     // MARK: - Helpers
@@ -27,7 +36,47 @@ final class FruitIntoBaskets: XCTestCase {
     
     class Solution {
         func totalFruit(_ fruits: [Int]) -> Int {
-            return 3
+            func possibleTreesCountFromIndex(_ index: Int) -> Int {
+                var treeType1: Int?
+                var treeType2: Int?
+                var treesCount = 0
+                
+                for i in index..<fruits.count {
+                    if let treeType1 = treeType1, let treeType2 = treeType2 {
+                        if fruits[i] != treeType1 && fruits[i] != treeType2 {
+                            break
+                        }
+                    }
+                    if treeType1 == nil {
+                        treeType1 = fruits[i]
+                    }
+                    if treeType2 == nil && fruits[i] != fruits[index] {
+                        treeType2 = fruits[i]
+                    }
+                    if treeType1 != nil {
+                        treesCount += 1
+                    } else if treeType2 != nil {
+                        treesCount += 1
+                    }
+                }
+                return treesCount
+            }
+            
+            var maxTrees = 0
+            for i in 0..<fruits.count {
+                if i > 0 && fruits[i] == fruits[i - 1] {
+                    continue
+                }
+                if maxTrees > fruits.count - i {
+                    break
+                }
+                let possibleMax = possibleTreesCountFromIndex(i)
+            
+                if possibleMax > maxTrees {
+                    maxTrees = possibleMax
+                }
+            }
+            return maxTrees
         }
     }
 }
