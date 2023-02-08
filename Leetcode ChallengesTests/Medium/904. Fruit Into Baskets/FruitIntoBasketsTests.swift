@@ -10,7 +10,7 @@ import XCTest
 /// Once you reach a tree with fruit that cannot fit in your baskets, you must stop.
 /// Given the integer array fruits, return the maximum number of fruits you can pick.
 
-final class FruitIntoBaskets: XCTestCase {
+final class FruitIntoBasketsTests: XCTestCase {
     
     func test_sut() {
         let sut = makeSUT()
