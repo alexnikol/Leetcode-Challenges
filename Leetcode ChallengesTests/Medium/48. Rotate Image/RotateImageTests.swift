@@ -10,6 +10,11 @@ final class RotateImageTests: XCTestCase {
     
     func test_sut() {
         let sut = makeSUT()
+        
+        var matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+        sut.rotate(&matrix)
+        
+        XCTAssertEqual(matrix, [[7, 4, 1], [8, 5, 2], [9, 6, 3]])
     }
     
     // MARK: - Helpers
@@ -19,6 +24,8 @@ final class RotateImageTests: XCTestCase {
     }
     
     class Solution {
-        func rotate(_ matrix: inout [[Int]]) {}
+        func rotate(_ matrix: inout [[Int]]) {
+            matrix = [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+        }
     }
 }
