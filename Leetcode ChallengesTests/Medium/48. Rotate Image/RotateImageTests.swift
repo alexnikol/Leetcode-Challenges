@@ -25,7 +25,18 @@ final class RotateImageTests: XCTestCase {
     
     class Solution {
         func rotate(_ matrix: inout [[Int]]) {
-            matrix = [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+            let n = matrix[0].count
+            
+            guard n > 1 else { return }
+            
+            for row in 0..<n {
+                matrix.append([])
+                for item in 0..<n {
+                    matrix[n + row].append(matrix[(n - 1) - item][row])
+                }
+            }
+            
+            matrix.removeSubrange(0..<n)
         }
     }
 }
